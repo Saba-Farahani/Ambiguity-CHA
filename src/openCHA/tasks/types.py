@@ -21,6 +21,7 @@ from openCHA.tasks.nutritionix import (
     CalculateFoodRiskFactor,
 )
 from openCHA.tasks.nutritionix import QueryNutritionix
+from openCHA.tasks.ambiguity import DiagnosticAmbiguityTask
 
 
 TASK_TO_CLASS: Dict[TaskType, Type[BaseTask]] = {
@@ -40,4 +41,6 @@ TASK_TO_CLASS: Dict[TaskType, Type[BaseTask]] = {
     TaskType.QUERY_NUTRITIONIX: QueryNutritionix,
     TaskType.CALCULATE_FOOD_RISK_FACTOR: CalculateFoodRiskFactor,
     TaskType.GOOGLE_SEARCH: GoogleSearch,
+    TaskType.DIAGNOSTIC_AMBIGUITY: DiagnosticAmbiguityTask,
+    
 }
