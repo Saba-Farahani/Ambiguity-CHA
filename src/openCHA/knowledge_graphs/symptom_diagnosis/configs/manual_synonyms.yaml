@@ -1,0 +1,386 @@
+# manual_synonyms.yaml
+# ---------------------
+# Manual alias mappings for dataset-specific terms that UMLS
+# cannot match automatically via normalized string lookup.
+#
+# Format:
+#   "normalized dataset term": ["alias1", "alias2", ...]
+#
+# Rules:
+#   - All strings must be lowercase
+#   - No parenthetical qualifiers
+#   - Only clinically defensible aliases
+#   - Add new entries when alignment_report.txt shows a missing term
+#
+# Organized by clinical group for maintainability.
+# ─────────────────────────────────────────────────────────────
+
+
+# ─────────────────────────────────────────────────────────────
+# COMPOUND SLASH TERMS
+# Dataset uses "A/B Word" patterns that UMLS does not recognize.
+# ─────────────────────────────────────────────────────────────
+
+"runny/stuffy nose":
+  - "runny nose"
+  - "stuffy nose"
+  - "nasal congestion"
+  - "rhinorrhea"
+  - "nasal discharge"
+
+"nausea/vomiting":
+  - "nausea"
+  - "vomiting"
+  - "nausea and vomiting"
+  - "emesis"
+
+"tendency to nausea and vomiting":
+  - "nausea"
+  - "vomiting"
+  - "nausea and vomiting"
+
+"inability to focus/concentrate":
+  - "poor concentration"
+  - "inattention"
+  - "concentration difficulty"
+
+"delayed verbal/language skills":
+  - "language delay"
+  - "speech delay"
+  - "verbal delay"
+
+
+# ─────────────────────────────────────────────────────────────
+# LAYPERSON SYMPTOM PHRASES
+# Informal terms used in Synthea that map to standard UMLS terms.
+# These are strong, clinically defensible mappings.
+# ─────────────────────────────────────────────────────────────
+
+"body aches":
+  - "body ache"
+  - "myalgia"
+  - "muscle ache"
+
+"sore throat":
+  - "pharyngeal pain"
+  - "throat pain"
+  - "pharyngitis"
+
+"swollen lymph nodes":
+  - "lymphadenopathy"
+  - "enlarged lymph nodes"
+
+"swollen tonsils":
+  - "tonsillar enlargement"
+  - "enlarged tonsils"
+
+"decreased appetite":
+  - "anorexia"
+  - "loss of appetite"
+  - "reduced appetite"
+
+"chest pressure":
+  - "chest tightness"
+  - "chest heaviness"
+
+"shortness of breath":
+  - "dyspnea"
+  - "breathlessness"
+  - "difficulty breathing"
+
+"shortness constipation breath":
+  - "shortness of breath"
+  - "dyspnea"
+
+"shallow breathing":
+  - "hypoventilation"
+
+"sleep disturbances":
+  - "insomnia"
+  - "sleep disruption"
+  - "disturbed sleep"
+
+"pain with bright lights":
+  - "photophobia"
+  - "light sensitivity"
+
+"sensitivity to pain":
+  - "hyperalgesia"
+  - "allodynia"
+
+"pain sensitivity":
+  - "hyperalgesia"
+  - "allodynia"
+
+"sneezing fits":
+  - "sneezing"
+  - "paroxysmal sneezing"
+
+"red skin":
+  - "erythema"
+  - "skin erythema"
+
+"cold intolerance":
+  - "intolerance to cold"
+
+"excessive daytime sleepiness":
+  - "hypersomnia"
+  - "daytime sleepiness"
+  - "somnolence"
+
+"loud snoring":
+  - "snoring"
+
+"reduced sex drive":
+  - "decreased libido"
+  - "low libido"
+
+"mood swing":
+  - "mood swings"
+  - "emotional lability"
+
+"stiffness":
+  - "joint stiffness"
+  - "muscle stiffness"
+  - "rigidity"
+
+"itchiness":
+  - "pruritus"
+  - "itching"
+
+"itching":
+  - "pruritus"
+  - "itchiness"
+
+"yawning":
+  - "excessive yawning"
+
+"mucus":
+  - "mucous secretion"
+  - "phlegm"
+
+"mucus secretion":
+  - "mucous secretion"
+  - "phlegm"
+
+
+# ─────────────────────────────────────────────────────────────
+# MUSCULOSKELETAL TERMS
+# Joint and muscle symptoms common in arthritis, fibromyalgia, gout.
+# ─────────────────────────────────────────────────────────────
+
+"joint pain":
+  - "arthralgia"
+  - "joint ache"
+
+"joint stiffness":
+  - "stiffness of joint"
+  - "articular stiffness"
+
+"joint swelling":
+  - "joint effusion"
+  - "articular swelling"
+
+"muscle pain":
+  - "myalgia"
+  - "muscular pain"
+
+"muscle tenderness":
+  - "myalgia"
+  - "tender muscles"
+
+
+# ─────────────────────────────────────────────────────────────
+# RESPIRATORY TERMS
+# Dyspnea variants and airway symptoms.
+# ─────────────────────────────────────────────────────────────
+
+"dyspnea on exertion":
+  - "exertional dyspnea"
+  - "shortness of breath on exertion"
+
+"nasal discharge":
+  - "rhinorrhea"
+  - "nasal secretion"
+
+"nasal congestion":
+  - "stuffy nose"
+  - "blocked nose"
+  - "nasal obstruction"
+
+"facial swelling":
+  - "facial edema"
+
+"sinus pain":
+  - "facial pain"
+  - "paranasal sinus pain"
+
+"ear pressure":
+  - "ear fullness"
+  - "aural pressure"
+
+
+# ─────────────────────────────────────────────────────────────
+# URINARY TERMS
+# Urinary tract infection and cystitis symptoms.
+# ─────────────────────────────────────────────────────────────
+
+"urgent desire to urinate":
+  - "urinary urgency"
+
+"increased frequency of urination":
+  - "urinary frequency"
+  - "pollakiuria"
+  - "frequent urination"
+
+"flank pain":
+  - "loin pain"
+  - "renal pain"
+  - "costovertebral pain"
+
+"renal angle tenderness":
+  - "costovertebral angle tenderness"
+
+"suprapubic pain":
+  - "lower abdominal pain"
+  - "pelvic pain"
+
+
+# ─────────────────────────────────────────────────────────────
+# NEUROCOGNITIVE AND BEHAVIORAL TERMS
+# Alzheimer's, ADHD, autism spectrum symptoms.
+# ─────────────────────────────────────────────────────────────
+
+"cognitive difficulties":
+  - "cognitive impairment"
+  - "cognitive dysfunction"
+
+"decreased attentiveness":
+  - "attention deficit"
+  - "inattention"
+
+"decreased communication":
+  - "communication difficulties"
+
+"decreased visual perception":
+  - "visual impairment"
+
+"decreased in judgement":
+  - "impaired judgment"
+  - "poor judgment"
+
+"hyperactive behavior":
+  - "hyperactivity"
+  - "overactivity"
+
+"poor eye contact":
+  - "avoidance of eye contact"
+  - "reduced eye contact"
+
+"poor socialization":
+  - "social withdrawal"
+  - "social difficulties"
+
+"slurred speech":
+  - "dysarthria"
+  - "speech slurring"
+
+
+# ─────────────────────────────────────────────────────────────
+# MISSING DIAGNOSIS
+# ─────────────────────────────────────────────────────────────
+
+"bleeding from anus":
+  - "rectal bleeding"
+  - "hematochezia"
+  - "anal bleeding"
+  - "rectal hemorrhage"
+  - "blood from anus"
+
+
+# ─────────────────────────────────────────────────────────────
+# MISSING SYMPTOMS — additional entries found from alignment run
+# ─────────────────────────────────────────────────────────────
+
+"sweating":
+  - "diaphoresis"
+  - "perspiration"
+  - "hyperhidrosis"
+  - "excessive sweating"
+
+"weight loss":
+  - "loss of body weight"
+  - "weight decrease"
+  - "body weight loss"
+  - "decreased body weight"
+
+"weight gain":
+  - "increased body weight"
+  - "weight increase"
+  - "body weight gain"
+
+"joint swelling":
+  - "joint effusion"
+  - "articular swelling"
+  - "swollen joint"
+  - "synovitis"
+
+"rales":
+  - "crackles"
+  - "lung crackles"
+  - "pulmonary crackles"
+  - "adventitious breath sounds"
+
+"edema":
+  - "oedema"
+  - "swelling"
+  - "fluid retention"
+  - "peripheral edema"
+
+"yawning":
+  - "excessive yawning"
+  - "frequent yawning"
+  - "gaping"
+
+"increased frequency of urination":
+  - "urinary frequency"
+  - "pollakiuria"
+  - "frequent urination"
+  - "frequency of micturition"
+
+"itchiness":
+  - "pruritus"
+  - "itching"
+  - "itch"
+  - "pruritic sensation"
+
+"lump/mass":
+  - "mass"
+  - "lump"
+  - "localized swelling"
+  - "soft tissue mass"
+"joint redness":
+  - "redness of joint"
+  - "erythema of joint"
+  - "articular erythema"
+
+"decreased communication":
+  - "communication difficulties"
+  - "speech difficulties"
+  - "reduced communication"
+"localized primary osteoarthritis of the hand":
+  - "osteoarthritis of hand"
+  - "hand osteoarthritis"
+  - "primary osteoarthritis of hand"
+
+"malignant neoplasm of breast":
+  - "breast cancer"
+  - "malignant tumor of breast"
+  - "breast carcinoma"
+  - "carcinoma of breast"
+
+"breast/nipple pain":
+  - "breast pain"
+  - "mastalgia"
+  - "nipple pain"
+

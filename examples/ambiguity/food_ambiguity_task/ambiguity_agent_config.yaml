@@ -1,0 +1,22 @@
+agent:
+  task_name: "food_ambiguity"
+  llm_model: "gpt-4o-mini"
+  temperature: 0.0
+  max_tokens: 512
+  use_kg: true
+  verbose: false
+
+paths:
+  input_csv: "data/input/food_dataset.csv"
+  output_csv: "results/food/food_ambiguity_kg_full.csv"
+  logs_folder: "results/food/logs/"
+  run_name: "food_ambiguity_run_01"
+
+evaluation:
+  compute_metrics: true
+  metrics_output_csv: "results/food/metrics/food_eval_metrics.csv"
+
+experiment:
+  seed: 42
+  num_examples: null
+  save_raw_responses: true

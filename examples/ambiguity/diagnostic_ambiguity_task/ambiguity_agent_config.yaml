@@ -1,0 +1,27 @@
+# ============================================================
+# Ambiguity Agent Configuration
+# ============================================================
+
+agent:
+  task_name: "diagnostic_ambiguity_task"
+  llm_model: "gpt-4o-mini"        # or "gpt-4o", "gpt-4", etc.
+  temperature: 0.0
+  max_tokens: 1024
+  use_kg: true
+  verbose: false
+
+paths:
+  input_csv: "data/input/questions.csv"
+  output_csv: "results/ambiguity_predictions.csv"
+  logs_folder: "results/logs/"
+  run_name: "ambiguity_agent_run_01"
+
+evaluation:
+  compute_metrics: true
+  metrics_output_csv: "results/metrics/ambiguity_eval_metrics.csv"
+  top_k: 5
+
+experiment:
+  seed: 42
+  num_examples: null   # null = use all
+  save_raw_responses: true
