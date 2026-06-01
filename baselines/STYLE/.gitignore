@@ -23,14 +23,14 @@ env/
 .specstory/
 .qodo/
 
-# Data & artifacts (download separately — see README)
-data/
+# Runtime datasets (download separately — see README); not style/data loaders
+/data/
 ClariQ/
 OpenDialKG/
 checkpoints/
 wandb/
 logs/
-saved_models/
+/saved_models/
 
 # Model weights
 *.pt

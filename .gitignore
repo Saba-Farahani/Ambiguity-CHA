@@ -4,6 +4,8 @@
 
 venv
 data
+!baselines/STYLE/style/data/
+!baselines/STYLE/style/data/**
 node_modules
 
 *.json
@@ -11,6 +13,8 @@ CHA.egg-info/
 build
 dist
 models
+!baselines/STYLE/style/models/
+!baselines/STYLE/style/models/**
 *.wav
 wav2vec2_checkpoints
 pretrained_models
