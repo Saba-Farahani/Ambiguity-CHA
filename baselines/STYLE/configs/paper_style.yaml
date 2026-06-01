@@ -1,0 +1,26 @@
+# Paper-aligned STYLE defaults (Appendix F.1)
+bert_model_name: OpenMatch/cocodr-base-msmarco
+bert_layers: 3
+top_k_docs: 5
+
+learning_rate: 1.0e-4
+batch_size: 32
+memory_size: 10000
+num_epochs: 1800
+gamma: 0.99
+epsilon_decay: 0.995
+epsilon_min: 0.05
+target_update: 50
+max_turns: 10
+
+num_actions: 2
+disp_hidden_size: 256
+
+success_reward: 1.0
+reward_timeout: -0.5
+intermediate_reward: 0.0
+
+model_name: gpt-3.5-turbo
+domains:
+  - clariq
+  - opendialkg

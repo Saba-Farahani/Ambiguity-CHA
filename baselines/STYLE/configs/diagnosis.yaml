@@ -1,0 +1,18 @@
+# Diagnosis-domain adaptation (Ambiguity-CHA benchmark)
+# Uses the same DISP architecture; domain-specific data adapters supply cases.
+
+extends: paper_style.yaml
+
+num_epochs: 100
+domains:
+  - diagnosis
+
+# Binary action space: 0 = provide diagnosis, 1 = ask follow-up
+num_actions: 2
+
+data:
+  train: data/train/diagnosis_train.csv
+  val: data/val/diagnosis_val.csv
+  test: data/test/diagnosis_test.csv
+
+checkpoint_dir: saved_models/diagnosis

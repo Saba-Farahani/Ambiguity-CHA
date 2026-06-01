@@ -1,0 +1,49 @@
+# STYLE baseline for Ambiguity-CHA
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# IDE / tooling
+.idea/
+.vscode/
+.cursor/
+.specstory/
+.qodo/
+
+# Data & artifacts (download separately — see README)
+data/
+ClariQ/
+OpenDialKG/
+checkpoints/
+wandb/
+logs/
+saved_models/
+
+# Model weights
+*.pt
+*.pth
+*.pkl
+
+# Large generated outputs
+food_safety_evaluation_results.json
+new_datasets_evaluation_comprehensive/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional local copies
+STYLE.pdf
